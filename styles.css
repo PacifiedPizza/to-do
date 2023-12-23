@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#myInput {
+    padding: 10px; /* Adjust the padding to make the input field taller */
+    font-size: 16px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.addbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px; /* Increase padding to make it bigger */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.addbtn:hover {
+    background-color: #45a049;
+}
+
+.list-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item li {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checked {
+    background: #302e2e;
+    color: #ff0303;
+    text-decoration: line-through;
+}
+
+.deletebtn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deletebtn:hover {
+    background-color: #d32f2f;
+}
+
+/* Media query for mobile-friendly design */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
